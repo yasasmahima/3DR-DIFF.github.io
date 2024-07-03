@@ -6,7 +6,7 @@
           content="">
     <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>3DR-DIFF: Blind Diffusion Inpainting for 3D Point Cloud Reconstruction and Segmentation</title>
+    <title>3DR-DIFF</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -32,7 +32,7 @@
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="stylesheet" href="./static/css/index.css">
-    <link rel="icon" href="./static/images/favicon.svg">
+    <link rel="icon" href="./static/images/apple-touch-icon.png">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -69,7 +69,7 @@
               <a href="">Sreenatha Anavatti</a><sup>1</sup>,
             </span>
                         <span class="author-block">
-              <a href="">Matt Garratt</a><sup>1</sup>,
+              <a href="">Matt Garratt</a><sup>1</sup>
             </span>
                     </div>
 
@@ -205,6 +205,7 @@
                 <div class="content">
                     <h2 class="title is-5">Ground Truth</h2>
                     <img width="50%" src="./static/images/fog-lidar-h-seg_khSPli7e.gif">
+                    <img src="./static/images/snow_depth_h_new.gif">
                 </div>
             </div>
         </div>
@@ -225,6 +226,7 @@
                 <div class="content">
                     <h3 class="title is-6">Corrupted</h3>
                     <img width="80%" src="./static/images/cs-lidar-c-seg_Qm0qI0mj.gif">
+                    <img src="./static/images/cs_depth_c_new.gif">
                 </div>
             </div>
 
@@ -237,6 +239,7 @@
                     <div class="column content">
                         <h3 class="title is-6">Generated</h3>
                         <img width="80%" src="./static/images/cs-lidar-s-seg_5fLgGqLJ.gif">
+                        <img src="./static/images/cs_depth_s_new.gif">
                     </div>
 
                 </div>
@@ -260,6 +263,7 @@
                 <div class="content">
                     <h3 class="title is-6">Corrupted</h3>
                     <img width="80%" src="./static/images/wg-lidar-c-seg_nYh6mKdU.gif">
+                    <img src="./static/images/wg_depth_c_new.gif">
                 </div>
             </div>
 
@@ -272,6 +276,7 @@
                     <div class="column content">
                         <h3 class="title is-6">Generated</h3>
                         <img width="80%" src="./static/images/wg-lidar-s-seg_zeqJFHKw.gif">
+                        <img src="./static/images/wg_depth_s_new.gif">
                     </div>
 
                 </div>
@@ -295,6 +300,7 @@
                 <div class="content">
                     <h3 class="title is-6">Corrupted</h3>
                     <img width="80%" src="./static/images/bm-lidar-c-seg_hqZJZNhp.gif">
+                    <img src="./static/images/bm_depth_c_new.gif">
                 </div>
             </div>
 
@@ -307,6 +313,7 @@
                     <div class="column content">
                         <h3 class="title is-6">Generated</h3>
                         <img width="80%" src="./static/images/bm-lidar-s-seg_zgXubpET.gif">
+                        <img src="./static/images/bm_depth_s_new.gif">
                     </div>
 
                 </div>
@@ -330,6 +337,7 @@
                 <div class="content">
                     <h3 class="title is-6">Corrupted</h3>
                     <img width="80%" src="./static/images/ic-lidar-c-seg_xnuS4fJ3.gif">
+                    <img src="./static/images/ie_depth_c_new.gif">
                 </div>
             </div>
 
@@ -342,6 +350,7 @@
                     <div class="column content">
                         <h3 class="title is-6">Generated</h3>
                         <img width="80%" src="./static/images/ic-lidar-s-seg_n5Njje4O.gif">
+                        <img src="./static/images/ie_depth_s_new.gif">
                     </div>
 
                 </div>
@@ -364,6 +373,7 @@
                 <div class="content">
                     <h3 class="title is-6">Corrupted</h3>
                     <img width="80%" src="./static/images/fog-lidar-c-seg_veZitO6J.gif">
+                    <img src="./static/images/fog_depth_c_new.gif">
                 </div>
             </div>
 
@@ -376,6 +386,7 @@
                     <div class="column content">
                         <h3 class="title is-6">Generated</h3>
                         <img width="80%" src="./static/images/fog-lidar-s-seg_nD9HxcL9.gif">
+                        <img src="./static/images/fog_depth_s_new.gif">
                     </div>
 
                 </div>
@@ -398,6 +409,7 @@
                 <div class="content">
                     <h3 class="title is-6">Corrupted</h3>
                     <img width="80%" src="./static/images/snow-lidar-c-seg_Gp6cl2TO.gif">
+                    <img src="./static/images/snow_depth_c_new.gif">
                 </div>
             </div>
 
@@ -410,6 +422,7 @@
                     <div class="column content">
                         <h3 class="title is-6">Generated</h3>
                         <img width="80%" src="./static/images/snow-lidar-s-seg_z6LGqfcx.gif">
+                        <img src="./static/images/snow_depth_s.gif">
                     </div>
 
                 </div>
@@ -435,31 +448,30 @@
                     </div>
                 </div>
 
-                <!--/ Visual Effects. -->
-
-                <!-- Matting. -->
                 <div class="column">
                     <!--                <h2 class="title is-3">Matting</h2>-->
                     <div class="columns is-centered">
                         <div class="column content">
-                            <h2 class="title is-5">Fog</h2>
-                            <img src="./static/images/fog_seg.gif">
+                            <h2 class="title is-5">Wet Ground</h2>
+                            <img src="./static/images/wet_ground_seg.gif">
                         </div>
 
                     </div>
                 </div>
+
+                <!--/ Visual Effects. -->
+
+                <!-- Matting. -->
             </div>
-
             <hr>
-
             <div class="container is-max-desktop">
 
                 <div class="columns is-centered">
                     <!-- Visual Effects. -->
                     <div class="column">
                         <div class="content">
-                            <h2 class="title is-5">Snow</h2>
-                            <img src="./static/images/snow_seg.gif">
+                            <h2 class="title is-5">Beam Missing</h2>
+                            <img src="./static/images/beam_missing_seg.gif">
                         </div>
                     </div>
 
@@ -470,40 +482,46 @@
                         <!--                <h2 class="title is-3">Matting</h2>-->
                         <div class="columns is-centered">
                             <div class="column content">
-                                <h2 class="title is-5">Wet Ground</h2>
-                                <img src="./static/images/wet_ground_seg.gif">
+                                <h2 class="title is-5">Incomplete Echo</h2>
+                                <img src="./static/images/incomplete_echo_seg.gif">
                             </div>
 
                         </div>
                     </div>
                 </div>
+
                 <hr>
+
                 <div class="container is-max-desktop">
 
                     <div class="columns is-centered">
                         <!-- Visual Effects. -->
                         <div class="column">
                             <div class="content">
-                                <h2 class="title is-5">Beam Missing</h2>
-                                <img src="./static/images/beam_missing_seg.gif">
+                                <h2 class="title is-5">Fog</h2>
+                                <img src="./static/images/fog_seg.gif">
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <!--                <h2 class="title is-3">Matting</h2>-->
+                            <div class="columns is-centered">
+                                <div class="column content">
+                                    <h2 class="title is-5">Snow</h2>
+                                    <img src="./static/images/snow_seg.gif">
+
+                                </div>
+
                             </div>
                         </div>
 
                         <!--/ Visual Effects. -->
 
                         <!-- Matting. -->
-                        <div class="column">
-                            <!--                <h2 class="title is-3">Matting</h2>-->
-                            <div class="columns is-centered">
-                                <div class="column content">
-                                    <h2 class="title is-5">Incomplete Echo</h2>
-                                    <img src="./static/images/incomplete_echo_seg.gif">
-                                </div>
 
-                            </div>
-                        </div>
                     </div>
 
+                    <hr>
                     <hr>
                     <!--/ Matting. -->
 
@@ -619,10 +637,10 @@
     <div class="container is-max-desktop content">
         <h2 class="title">BibTeX</h2>
         <pre><code>@article{3drdiff2024,
-  author    = {Mahima, K.T.Y; Perera, Asanka; Anavatti, Sreenatha; Garratt, Matt},
-  title     = {3DR-DIFF: Blind Diffusion Inpainting for 3D Point Cloud Reconstruction and Segmentation},
-  conference   = {IROS},
-  year      = {2024},
+  author     = {Mahima, K.T.Y; Perera, Asanka; Anavatti, Sreenatha; Garratt, Matt},
+  title      = {3DR-DIFF: Blind Diffusion Inpainting for 3D Point Cloud Reconstruction and Segmentation},
+  conference = { IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year       = {2024},
 }</code></pre>
     </div>
 </section>
